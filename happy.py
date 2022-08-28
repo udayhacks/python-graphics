@@ -26,8 +26,10 @@ button .grid(column = 1 , row = 0)
 
 menu = Menu(root)
 item = Menu(menu)
-item.add_command(label="New")
+
 menu.add_cascade(label= "file",menu = item)
+item.add_command(label="New")
+                 
 root.config(menu = menu)
 
 
